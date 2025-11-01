@@ -1,0 +1,45 @@
+[package]
+name = "token_analytics_api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Web Framework
+actix-web = "4.4"
+actix-rt = "2.9"
+
+# GraphQL
+async-graphql = "5.0"
+async-graphql-actix-web = "5.0"
+
+# Async Runtime & Utilities
+tokio = { version = "1.29", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dotenv = "0.15"
+anyhow = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+env_logger = "0.11"
+
+# Redis Caching
+redis = { version = "0.24", features = ["tokio-comp"] }
+
+# HTTP Client
+reqwest = { version = "0.11", features = ["json", "rustls-tls"] }
+
+# Ethereum
+web3 = { version = "0.18", features = ["http"] }
+
+# Solana
+solana-client = "1.14.0"
+solana-sdk = { version = "1.14.0", features = ["program"] }
+solana-account-decoder = "1.14.0"
+spl-token = { version = "3.5.0", features = ["no-entrypoint"] }
+spl-associated-token-account = "2.0.0"
+
+# Utilities
+chrono = { version = "0.4", features = ["serde"] }
+hex = "0.4"
+bs58 = "0.5"
