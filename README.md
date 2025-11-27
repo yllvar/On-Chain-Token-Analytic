@@ -20,7 +20,7 @@ A GraphQL API for fetching and analyzing on-chain token data from Ethereum and S
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/on-chain-token-analytics.git
+   git clone https://github.com/yllvar/on-chain-token-analytics.git
    cd on-chain-token-analytics
    ```
 
